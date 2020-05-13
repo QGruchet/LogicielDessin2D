@@ -1,8 +1,8 @@
 public class triangle extends tabFig{
 
-    private point p1;
-    private point p2;
-    private point p3;
+    final private point p1;
+    final private point p2;
+    final private point p3;
 
     public triangle(point p1, point p2, point p3){
         this.p1 = p1;
@@ -40,7 +40,7 @@ public class triangle extends tabFig{
         System.out.println("Point en bas a droite : ");
         System.out.println("(" + this.p3.getx() + ", " + this.p3.gety() + ")");
 
-        System.out.println("Perimetre du triangle : " + getPerimetre() + "cm²");
-        System.out.println("Aire du triangle : " + getAire() + "cm³");
+        System.out.println("Perimetre du triangle : " + getPerimetre() + "cm");
+        System.out.println("Aire du triangle : " + getAire() + "cm²");
     }
 }

@@ -1,7 +1,7 @@
 public class rectangle extends tabFig{
 
-    private point x;
-    private point y;
+    final private point x;
+    final private point y;
 
     public rectangle(point BasGauche, point HautDroit){
         this.x = BasGauche;
@@ -54,8 +54,8 @@ public class rectangle extends tabFig{
         System.out.println("(" + basDroit().getx() + ", " + basDroit().gety() + ")");
 
         System.out.println("Rectangle de hauteur : " + getHauteur() + "cm et de largeur : " + getLargeur() + "cm");
-        System.out.println("Aire du rectangle : " + getAire() + "cm³");
-        System.out.println("Perimetre du rectangle : "+ getPerimetre() + "cm²");
+        System.out.println("Aire du rectangle : " + getAire() + "cm²");
+        System.out.println("Perimetre du rectangle : "+ getPerimetre() + "cm");
 
     }
 }

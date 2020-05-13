@@ -2,8 +2,8 @@ import java.lang.*;
 
 public class cercle extends tabFig{
 
-    private point p;
-    private double rayon;
+    final private point p;
+    final private double rayon;
 
     public cercle(point centre, double rayon) {
         this.p = centre;
@@ -12,7 +12,7 @@ public class cercle extends tabFig{
 
     public double getRayon(){
         if(this.rayon < 0){
-            System.out.println("Diamètre negatif impossible");
+            System.out.println("Diamètre négatif impossible");
             System.exit(-2);
         }
         return this.rayon;
@@ -35,7 +35,7 @@ public class cercle extends tabFig{
     public void print(){
         System.out.println("Centre du cercle : (" + this.p.getx() + ", " + this.p.gety() + ")");
         System.out.println("Diamètre du cercle de " + getRayon() * 2 + "cm");
-        System.out.println("Perimètre du cercle de : " + getPerimetre() + "cm²");
-        System.out.println("Aire du cercle de : " + getAire() + "cm³");
+        System.out.println("Perimètre du cercle de : " + getPerimetre() + "cm");
+        System.out.println("Aire du cercle de : " + getAire() + "cm²");
     }
 }
